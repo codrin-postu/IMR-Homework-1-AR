@@ -41,6 +41,9 @@ public class ObjectDistance : MonoBehaviour
 
     private void OnGUI()
     {
+        if (Distance <= 50)
+        {
             GUI.Label(new Rect(5, 5, 200, 200), $"Distance between objects: {Distance}cm", style);
+        }
     }
 }
